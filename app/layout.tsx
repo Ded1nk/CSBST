@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./app.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,7 +17,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        {/* Zendesk Widget Script */}
+        <Script
+          id="ze-snippet"
+          src="https://static.zdassets.com/ekr/snippet.js?key=YOUR_ZENDESK_KEY_HERE"
+          strategy="afterInteractive"
+        />
+      </body>
     </html>
   );
 }
