@@ -47,9 +47,9 @@ export default function App() {
           Review next steps of this tutorial.
         </a>
       </div>
-       <!-- Start of bbruhinc Zendesk Widget script -->
-      <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=d55949d1-a86e-4412-b691-4d5f5a490137"> </script>
-      <!-- End of bbruhinc Zendesk Widget script -->
     </main>
+    <!-- Start of bbruhinc Zendesk Widget script -->
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=d55949d1-a86e-4412-b691-4d5f5a490137"> </script>
+    <!-- End of bbruhinc Zendesk Widget script -->
   );
 }
